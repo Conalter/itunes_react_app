@@ -5,8 +5,8 @@ const ArtistList = (props) => {
 
   const artistList = props.artists.map((artist, index) => {
     return(
-      <ul key={index}>
-        <li>Artist {index}: {artist.label}</li>
+      <ul key={artist.id.attributes["im:name"].label}>
+        {/* <li>Artist {index}: {artist.label}</li> */}
       </ul>
     );
   });
