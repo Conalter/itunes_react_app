@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import ItunesContainer from "./containers/ItunesContainer.js";
 
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
-      <div className="ItunesContainer">
-      </div>
+      <div className='App'>
+      <ItunesContainer/>
+    </div>
     );
   }
 }
-
-export default App;
